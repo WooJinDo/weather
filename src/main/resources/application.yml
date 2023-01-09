@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:4306/project?serverTimezone=UTC&characterEncoding=UTF-8
+    username:
+    password:
+
+    jpa:
+      show-sql: true
+      database: mysql
+
+  output:
+    ansi:
+      enabled: always
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+openweathermap:
+  key:
+
+logging:
+  config: classpath:logback-spring.xml
+
